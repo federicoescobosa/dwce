@@ -1,0 +1,1 @@
+Este texto se ha podido mostrar aquí porque los datos del formulario han sido validados correctamente, y la comunicación con el servidor donde estaba alojado ha sido de manera asíncrona utilizando AJAX

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Tarea Global DWEC</title>
+	<style>
+		@import url(estilo.css);
+	</style>
+	<script src="js.js"></script>
+	<script src="ajax.js"></script>
+</head>
+<body >
+	<nav>
+		<h1 id="cabecera">Tarea Global DWEC: Comunicación Asíncrona</h1>
+	</nav>
+	<form>
+		
+				<div id="formulario" class="campos">
+					<input id="nombre"  type="text" onblur="validacionNombre()" placeholder="Nombre" required>
+					
+				</div>
+
+				<div class="campos">
+					<input type="text" id="phone" placeholder="Teléfono" required onblur="validacionPhone()">
+				</div>
+
+				<div class="campos">
+					<input type="number" id="postal" onblur="validacionPostal()" placeholder="Código Postal" required>
+				</div>
+				<div class="campos">
+					<button class="button" id="boton" type="button" enabled="false" onclick="peticionAjax();" disabled="true">Envíame el fichero de texto</button>
+				</div>
+				
+				<div><p id="contenido"></p></div><!-- Aqui aparece lo que hay en el texto.txt -->
+		
+	</form>
+	
+	<footer><h1 id="pie">Realizado por Federico Escobosa Osa 14627216<h1></footer>
+</body>
+</html>
